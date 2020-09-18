@@ -1,0 +1,327 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+    <!--====== USEFULL META ======-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Transportation & Agency Template is a simple Smooth transportation and Agency Based Template" />
+    <meta name="keywords" content="Portfolio, Agency, Onepage, Html, Business, Blog, Parallax" />
+
+    <!--====== TITLE TAG ======-->
+    <title>Services</title>
+
+   
+     <!--====== FAVICON ICON =======-->
+    <link rel="shortcut icon" type="image/ico" href="{{ url_for('static',filename='img/favicon.png')}}" />
+
+    <!--====== STYLESHEETS ======-->
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/normalize.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/animate.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/stellarnav.min.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/owl.carousel.css')}}">
+    <link href="{{ url_for('static',filename='css/bootstrap.min.css')}}" rel="stylesheet">
+    <link href="{{ url_for('static',filename='css/font-awesome.min.css')}}" rel="stylesheet">
+
+    <!--====== MAIN STYLESHEETS ======-->
+    <link href="{{ url_for('static',filename='style.css')}}" rel="stylesheet">
+    <link href="{{ url_for('static',filename='css/responsive.css')}}" rel="stylesheet">
+
+    <script src="{{ url_for('static',filename='js/vendor/modernizr-2.8.3.min.js')}}"></script>
+    <!--[if lt IE 9]>
+        <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+</head>
+
+<body class="single-page">
+
+    <!--[if lt IE 8]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <!--- PRELOADER -->
+    <div class="preeloader">
+        <div class="preloader-spinner"></div>
+    </div>
+
+    <!--SCROLL TO TOP-->
+    <a href="#home" class="scrolltotop"><i class="fa fa-long-arrow-up"></i></a>
+
+    <!--START TOP AREA-->
+    <header class="top-area single-page" id="home">
+        <div class="top-area-bg" data-stellar-background-ratio="0.6"></div>
+        <div class="header-top-area">
+            <!--MAINMENU AREA-->
+            <div class="mainmenu-area" id="mainmenu-area">
+                <div class="mainmenu-area-bg"></div>
+                <nav class="navbar">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <a href="#home" class="navbar-brand"><img src="img/logo.png" alt="logo"></a>
+                        </div>
+                        
+                       <div id="main-nav" class="stellarnav">
+                            <ul id="nav" class="nav navbar-nav">
+                                 <li><a href="{{ url_for('index')}}">home</a></li>
+                             
+                                <li><a href="{{ url_for('service')}}">Service</a></li>
+                                <!-- <li><a href="blog.html">Blog</a></li> -->
+                                <li><a href="{{ url_for('contact')}}">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <!--END MAINMENU AREA END-->
+        </div>
+        <div class="welcome-area">
+            <div class="area-bg"></div>
+            <div class="container">
+                <div class="row flex-v-center">
+                    <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                        <div class="welcome-text text-center">
+                            <h2>Service</h2>
+                            <ul class="page-location">
+                                <li><a href="{{ url_for('index')}}">Home</a></li>
+                                <li>/</li>
+                                <li><a href="{{ url_for('service')}}">Service</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--END TOP AREA-->
+
+    <!--SERVICE AREA-->
+    <section class="service-area-two section-padding gray-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-lg-6 col-md-offset-3 col-lg-offset-3 col-sm-12 col-xs-12">
+                    <div class="area-title text-center wow fadeIn">
+                        <h2>Our Service</h2>
+                        <p>Diabetic Retinopathy prediction, </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12">
+                    <div class="service-content wow fadeIn">
+                        <h2>we offer state of the art prediction solution</h2>
+                        <p></p>
+                        <a href="{{ url_for('service')}}" class="read-more">Learn More</a>
+                    </div>
+                </div>
+                <!-- <div class="col-md-8 col-lg-8 col-sm-12 col-xs-12">
+                    <div class="service-two-content wow fadeIn">
+                        <div class="row" style="    margin-left: 100px;">
+                            <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12 no-padding">
+                                <div class="single-service-two border">
+                                    <div class="service-icon-two"><i class="fa fa-truck"></i></div>
+                                    <h4>Flood Prediction</h4>
+                                    <p>Flood relief services.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12 no-padding">
+                                <div class="single-service-two border-top border-bottom border-right">
+                                    <div class="service-icon-two"><i class="fa fa-plane"></i></div>
+                                    <h4>Rainfall Prediction</h4>
+                                    <p>Rainfall relief services.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+    <!--SERVICE AREA END-->
+
+    <!--PROMO AREA-->
+    <section class="promo-area">
+        <div class="promo-bottom-area section-padding">
+            <div class="promo-botton-area-bg" data-stellar-background-ratio="0.6"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 col-lg-10 col-md-offset-1 col-lg-offset-1 col-sm-12 col-xs-12 text-center">
+                        <div class="promo-bottom-content wow fadeIn">
+                            <h2>we offer quick and powerful Diabetic Retinopathy prediction solution</h2>
+                            <a href="{{ url_for('index')}}" class="read-more">HOME</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--PROMO AREA END-->
+
+    <!--BLOG AREA-->
+    <section class="blog-area gray-bg padding-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12">
+                    <div class="single-blog wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="blog-image">
+                            <img src="{{ url_for('static',filename='img/blog/blog_1.png')}}" alt="">
+                        </div>
+                        <div class="blog-details text-center">
+                            <div class="blog-meta"><a href="#"><i class="fa fa-camera-retro fa-lg"></i></a></div>
+                            <h3><a href="single-blog.html">Diabetes related eye disease and vision loss</a></h3>
+                            <p>Over 30 million people in the United States live with diabetes, and approximately 7.7 million people have diabetic retinopathy, making it the most common cause of vision loss in working-aged adults..</p>
+                            <a href="https://www.health.harvard.edu/blog/diabetic-retinopathy-understanding-diabetes-related-eye-disease-and-vision-loss-2020011618394" class="read-more">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12">
+                    <div class="single-blog wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="blog-image">
+                            <img src="{{ url_for('static',filename='img/blog/blog_2.png')}}" alt="">
+                        </div>
+                        <div class="blog-details text-center">
+                            <div class="blog-meta"><a href="#"><i class="fa fa-hospital-o"></i></a></div>
+                            <h3><a href="single-blog.html">Why you should Care</a></h3>
+                            <p>Up to 24,000 Americans are blinded by diabetic retinopathy each year. The American Optometric Association predicts that by 2050, the number of Americans over 40 years old with diabetic retinopathy will triple to 16 million...</p>
+                            <a href="https://versanthealth.com/blog/diabetic-retinopathy-why-you-should-care/" class="read-more">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12">
+                    <div class="single-blog wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="blog-image">
+                            <img src="{{ url_for('static',filename='img/blog/blog_3a.jpg')}}" alt="">
+                        </div>
+                        <div class="blog-details text-center">
+                            <div class="blog-meta"><a href="#"><i class="fa fa-stethoscope"></i></a></div>
+                            <h3><a href="single-blog.html">Facts Symptoms</a></h3>
+                            <p>Diabetic retinopathy is an eye condition that is caused by high blood sugar levels that damage the blood vessels present in the retina located at the back of the eye. It leads to haemorrhage and causes distorted vision when it reaches a progressive stage...</p>
+                            <a href="https://www.lotuseye.org/blog/10-reasons-why-you-should-be-aware-of-diabetic-retinopathy/" class="read-more">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+      <!--BLOG AREA END-->
+
+    
+  
+    <!--FOOER AREA-->
+    <div class="footer-area dark-bg">
+        <div class="footer-area-bg"></div>
+        <div class="footer-top-area wow fadeIn">
+        </div>
+        <div class="footer-bottom-area wow fadeIn">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12">
+                        <div class="single-footer-widget footer-about">
+                            <h3>About Us</h3>
+                            <p>NTT DATA Services</p>
+                            <ul>
+                                <!-- <li><i class="fa fa-phone"></i> <a href="></a></li> -->
+                                <li><i class="fa fa-map-marker"></i> <a href="">InnoVoC 2020</a></li>
+                                <!-- <li><i class="fa fa-phone"></i> Noida, India.</li> -->
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12">
+                        <div class="single-footer-widget twitter-widget">
+                            <h3>Social Media</h3>
+                            <ul>
+                                <li>
+                                    <div class="twitter-icon"><i class="fa fa-twitter"></i></div>
+                                    <div class="tweet-detail">
+                                        <p>Diabetic Retinopathy, is associated with increased risk for #Alzhimers. </p>
+                                        <a href="https://twitter.com/hashtag/diabeticretinopathy" class="tweet-meta">1 Day Ago</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="twitter-icon"><i class="fa fa-twitter"></i></div>
+                                    <div class="tweet-detail">
+                                        <p>Here are some tips to prevent Diabetic Retinopathy </p>
+                                        <a href="https://twitter.com/hashtag/diabeticretinopathy" class="tweet-meta">3 Days Ago</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12">
+                        <div class="single-footer-widget list-widget">
+                            <h3>Customer Service</h3>
+                            <ul>
+                                <li><a href="{{ url_for('contact')}}">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12">
+                        <div class="single-footer-widget instafeed-widget">
+                            <h3>Related Pictures</h3>
+                            <ul>
+                                <li><a href=""><img src="{{ url_for('static',filename='img/dr/pm.png')}}" alt=""></a></li>
+                              </ul>
+                        </div>
+                    </div> -->
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="footer-border"> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
+                        <div class="footer-copyright wow fadeIn">
+                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                            <!-- <p><script></script><i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="#" target="_blank"></a></p> -->
+                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
+                        <div class="footer-social-bookmark text-right wow fadeIn">
+                            <ul class="social-bookmark">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-vimeo"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-behance"></i></a></li>
+                                <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--FOOER AREA END-->
+
+
+ <!--====== SCRIPTS JS ======-->
+    <script src="{{ url_for('static',filename='js/vendor/jquery-1.12.4.min.js')}}"></script>
+    <script src="{{ url_for('static',filename='js/vendor/bootstrap.min.js')}}"></script>
+
+    <!--====== PLUGINS JS ======-->
+    <script src="{{ url_for('static',filename='js/vendor/jquery.easing.1.3.js')}}"></script>
+    <script src="{{ url_for('static',filename='js/vendor/jquery-migrate-1.2.1.min.js')}}"></script>
+    <script src="{{ url_for('static',filename='js/vendor/jquery.appear.js')}}"></script>
+    <script src="{{ url_for('static',filename='js/owl.carousel.min.js')}}"></script>
+    <script src="{{ url_for('static',filename='js/stellar.js')}}"></script>
+    <script src="{{ url_for('static',filename='js/wow.min.js')}}"></script>
+    <script src="{{ url_for('static',filename='js/stellarnav.min.js')}}"></script>
+    <script src="{{ url_for('static',filename='js/contact-form.js')}}"></script>
+    <script src="{{ url_for('static',filename='js/jquery.sticky.js')}}"></script>
+
+    <!--===== ACTIVE JS=====-->
+    <script src="{{ url_for('static',filename='js/main.js')}}"></script>
+</body>
+
+</html>
